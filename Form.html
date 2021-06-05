@@ -1,0 +1,157 @@
+<html>
+    <head> 
+    <title>Customer </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400&display=swap" rel="stylesheet"> 
+   <style>
+   *{margin: 0; padding: 0; box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+      }
+   header{
+        width: 100%; height: 100vh;
+        background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)), url('Taj.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;}
+        nav{
+            width: 100%; height: 15vh;
+            color: white; text-transform: uppercase;
+            display: flex; justify-content:  space-between; align-items: center;
+            background: rgba(0,0,0,0.2); 
+        }
+        header .menu a:first-child{ color: #00b894;}
+        nav .logo{ width: 25%; text-align: center;
+        }
+        nav .menu{
+            width: 40%; 
+            display: flex; 
+        }
+        nav .menu a{
+            font-weight: bold;
+            width: 25%;
+            text-decoration: none; color: white;
+        }
+        main{ color: white;
+            width: 100%; height: 85%;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+             }
+             section{margin: 30px 0 20px 0;
+                   text-transform: uppercase;
+                   color: black;  
+                   border: 1px solid rgba(0,0,0,0.5);
+                   box-shadow:2px 2px 15px rgba(0,0,0,0.3);
+                   border-radius: 10px;
+             }
+             section .btone{  transition: all .5s ease;
+                   margin-top: 20px;
+             }
+             section .btone1{ text-decoration: none; padding: 12px 30px;
+                       letter-spacing:  2px; border-radius: 4px; outline: none; text-transform: uppercase; font-size: 13px;
+                 background: #00b894;
+                 color: white;
+             }
+             section .btone2{ text-decoration: none; padding: 12px 30px;
+                       letter-spacing:  2px; border-radius: 4px; outline: none; text-transform: uppercase; font-size: 13px;
+                 background: #fff;
+                 color: #000;
+             }
+             .btone1:hover{ background: #fff;
+                 color: #000;}
+                 .btone2:hover{background: #00b894;
+                 color: white;}
+             section h3{ text-transform: uppercase;
+                 font-size:  35px; font-weight: 600; letter-spacing: 3px;
+                 text-shadow: 1px 1px 2px black;    
+             }
+              section form{
+                  margin-top: 20px;
+              }
+            
+   </style>
+    </head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"> <h3 class="animated infinite heartBeat">Registration </h3></div>
+            <div class="menu">
+              <a href="https://www.youtube.com/watch?v=jA3XkD8k8-A" target="_blank">About</a>
+                <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+                 <a href="mail to:danishqureshi8817@gmail.com" target="_blank">Contact</a>
+                  <a href="https://myaccount.google.com/?utm_source=sign_in_no_continue" target="_blank" >Gmail</a>
+                  
+            </div>
+        </nav>
+        
+ <main>
+     <section> 
+         <br>
+         <br>
+   <h3><i>Customer Registration</i></h3>
+<form action="https://www.youtube.com/watch?v=jA3XkD8k8-A" target="_blank" method="POST">
+   <label for="fname"><b><i>First Name:</i></b></label>&nbsp;&nbsp;
+   <input type="text" id="fname" name="fname" placeholder="First Name"><br><br>
+   <label for="fname"><b><i>Last Name:</i></b></label>&nbsp;&nbsp;
+   <input  type="text" id="lname" name="lname" placeholder="Last Name"><br><br>
+   
+   <label for="gender"><b><i>Gender:</i></b></label>&nbsp;&nbsp;
+   <label for="male"><b><i>Male:</i></b></label>
+   <input  type="radio" id="male" name="gender" value="male">
+   <label for="female"><b><i>Female:</i></b></label>&nbsp;
+   <input type="radio" id="female" name="gender" value="female"><br><br>
+   
+   <label for="bday"><b><i>Birthday Date:</i></b></label>&nbsp;
+   <input type="date" min="2000-02-20"  id="bday" name="bday" ><br><br>
+   
+   <label for="address" ><b><i>Address:</i></b></label>&nbsp;
+   <textarea id="address" name="address" rows="3" cols="30"></textarea><br><br>
+
+   <label><b><i>State:</i></b></label>&nbsp;&nbsp;
+   <select id="sate" name="sate" >
+       <option>-State-</option>
+       <option>Uttar Pradesh</option>
+        <option>Madhya Pradesh</option>
+         <option>Himachal Pradesh</option>
+          <option>Haryana</option>
+       
+   </select><br><br>
+ 
+    <label for="id"><i><b>Identity:</b></d></i> </label>&nbsp;
+    <b>
+    <input type="checkbox" id="aadhar" name="id" value="aadhar">Aadhar
+    <input type="checkbox" id="Voter Card" name="id" value="Voter Card">Voter Card
+    <input type="checkbox" id="Driving Lisense" name="id" value="Driving Lisense"> Driving Lisense
+</b><br><br>
+    <lable for="email"><b><i>Email Address:</i></b></lable>&nbsp;&nbsp;
+    <input type="email" id="email" name="email" placeholder="example@gmail.com"><br><br>
+
+    <label for="mobile"><b><i>Mobile:</i></b></label>&nbsp;&nbsp;
+    <select name="code">
+        <option>+91</option>
+          <option>+92</option>
+            <option>+1</option>
+    </select>
+    <input required maxlength="10" size="10" type="text" id="mobile" title="Plz Input Number Only." name="mobile" ><br><br>
+    
+    <label for="Password"><b><i>Password:</i></b></label>&nbsp;&nbsp;
+    <input type="password" id="password" name="password"><br><br>
+    
+    <label for="picture"><b><i>picture:</i></b></label>&nbsp;&nbsp;
+    <input type="file" id="picture" name="picture"><br><br>
+   <div class="btone"> 
+    <input class="btone1" type="submit" name="submit" value="Submit">
+    <button class="btone2" type="button" name="Click"  onclick="alert('Fill Properly&#33;')"> Click Me&#33;</button>
+</div>
+
+   
+   
+    </form>
+    </section>
+   </main>
+ </header>
+
+</body>
+</html>
+
+
